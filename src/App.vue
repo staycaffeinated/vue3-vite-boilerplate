@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <h1>App Vue</h1>
+  <router-view /> 
 </template>
 
 <style>
