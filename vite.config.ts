@@ -2,6 +2,7 @@ import path from 'path';
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import ViteFonts from 'vite-plugin-fonts' 
+import VueI18n from '@intlify/vite-plugin-vue-i18n'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -24,6 +25,9 @@ export default defineConfig({
         }
       }),
 
-
-  ]
+      // https://github.com/intlify/vite-plugin-vue-i18n
+      VueI18n({
+          include: [ path.resolve(__dirname, './locales/**' )],
+      }),
+  ],
 })
