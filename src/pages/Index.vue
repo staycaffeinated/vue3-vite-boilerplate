@@ -9,9 +9,9 @@ export default defineComponent({
   setup() {
     const { t, availableLocales, locale } = useI18n();
 
-    const toggleLocales = () => { 
+    const toggleLocales = () => {
       const locales = availableLocales;
-      local.value = 
+      locale.value =
         locales[(locales.indexOf(locale.value)+1) % locales.length];
     };
 
