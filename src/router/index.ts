@@ -4,13 +4,13 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    meta: { layout: "no-sidebar" },
-    component: () => import('/@/pages/Index.vue'),
+    component: () => import('../pages/Index.vue'),
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('/@/pages/About.vue'),
+    meta: { layout: "no-sidebar" },
+    component: () => import('../pages/About.vue'),
   }
 ];
 

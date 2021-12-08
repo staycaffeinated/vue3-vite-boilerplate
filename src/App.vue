@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import {defineComponent} from 'vue';
 
 export default defineComponent({
   name: 'App',
@@ -26,10 +26,13 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
-    <component :is="layout">
-      <router-view />
-    </component>
+  <div class="flex-shrink-0">
+    <div class="container">
+      <component :is="layout">
+        <router-view/>
+      </component>
+    </div>
+    <footer />
   </div>
 </template>
 

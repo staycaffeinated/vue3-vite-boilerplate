@@ -1,15 +1,15 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { useI18n } from "vue-i18n";
-import Navbar from "/@/components/Navbar.vue";
-import Footer from "/@/components/Footer.vue";
+import Navbar from "../components/Navbar.vue";
+import BottomNavbar from "../components/BottomNavbar.vue";
 
 export default defineComponent({
   name: 'Default',
 
   components: {
     Navbar,
-    Footer
+    BottomNavbar
   },
 
   setup() {
@@ -27,9 +27,7 @@ export default defineComponent({
       <slot />
     </div>
 
-    <footer />
+    <bottom-navbar />
   </div>
 </template>
 
-<style scoped>
-</style>
