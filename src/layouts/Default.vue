@@ -24,10 +24,21 @@ export default defineComponent({
 <template>
   <div>
     <navbar />
-    <main>
-      <p>Some content</p>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container min-vh-100">
+        <div class="row py-4">
+          <div class="col-md-6">
+            <h1 class="mt-5">Main page content</h1>
+            <p class="lead">Example code: <code class="small">padding-top: 60px;</code> on the <code class="small">main
+              &gt; .container</code>.</p>
+            <p>Back to our regularly scheduled programming.</p>
+          </div>
+        </div>
+      </div>
     </main>
-    <!-- Footer -->
+
     <bottom-navbar />
   </div>
 </template>

@@ -26,8 +26,6 @@ export default defineComponent({
     <div class="container">
       <slot />
     </div>
-
-    <bottom-navbar />
   </div>
 </template>
 

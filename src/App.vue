@@ -1,9 +1,10 @@
 <script lang="ts">
 import {defineComponent} from 'vue';
+import BottomNavbar from "./components/BottomNavbar.vue";
 
 export default defineComponent({
   name: 'App',
-
+  components: {BottomNavbar},
   computed: {
     layout() {
       console.log("Determining layout...");
@@ -26,13 +27,10 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="flex-shrink-0">
-    <div class="container">
-      <component :is="layout">
-        <router-view/>
-      </component>
-    </div>
-    <footer />
+  <div class="container min-vw-100">
+    <component :is="layout">
+      <router-view/>
+    </component>
   </div>
 </template>
 

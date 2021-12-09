@@ -29,4 +29,7 @@ export default defineComponent({
 </template>
 
 <style scoped>
+.footer {
+  flex: 1 1 auto
+}
 </style>
