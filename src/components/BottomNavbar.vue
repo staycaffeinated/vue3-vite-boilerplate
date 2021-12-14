@@ -21,9 +21,21 @@ export default defineComponent({
 </script>
 
 <template>
-  <footer class="footer mt-auto py-3 bg-light">
+  <footer class="footer mt-auto py-3">
     <div class="container text-center">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <span class="text-black">Place sticky footer content here.</span>
     </div>
   </footer>
 </template>
+
+<style>
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-left: -1em;
+  margin-right: auto;
+  background-color: lightslategray;
+}
+
+</style>

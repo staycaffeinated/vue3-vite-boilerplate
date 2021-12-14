@@ -33,3 +33,10 @@ export default defineComponent({
     </component>
   </div>
 </template>
+
+<style>
+body {
+  margin: 0;
+  /* margin-bottom: 60px; */
+}
+</style>
